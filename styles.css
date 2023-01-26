@@ -1,0 +1,22 @@
+  body{
+    background-color: #B9F3FC
+  }
+  h1{
+    color: #7d47e8; 
+    border: #f3f5f5;
+    border-style: outset;
+  }
+  h3{
+    color:#4007a9 ;
+  }
+  hr{
+    background-color: azure;
+    border-style: hidden;
+    height: 2px;
+    width: 20%;
+  }
+  #circle{
+    border-radius: 100%;
+    border-color: rgb(251, 248, 248);
+    border-style: outset;
+  }
