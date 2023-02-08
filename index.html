@@ -1,105 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Krishna Personal site</title>
-  <link rel="stylesheet" href="https://github.com/HarikrishnaAchari/hari/blob/main/styles.css">
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <link rel="icon" href="C:\Users\91778\Dropbox\My PC (LAPTOP-TD0G4TPP)\Desktop\web\TinDog-Start-master\images\apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+ <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/0ae901f8f9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <table cellspacing="50" style="background-color: #b5ecd5;">
-    <tr>
-      <td><img id="circle" src="data:image/jpeg;base64,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" alt="iron man"></td>
-      <td><h1><em>Hari Krishna Achari</em></h1>
-        <p><em><a href="https://www.google.com/search?q=tcs&rlz=1C1NDCM_enIN950IN950&sxsrf=AJOqlzV5elCOskoTtMa4_m-sdPWf5d_OOg%3A1674626543968&ei=78XQY-XjOpLz4-EPzamc6AQ&ved=0ahUKEwill6OChuL8AhWS-TgGHc0UB00Q4dUDCA8&uact=5&oq=tcs&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIQCC4QsQMQgwEQxwEQ0QMQQzIECAAQQzILCAAQgAQQsQMQgwEyBAgAEEMyCwgAEIAEELEDEIMBMgUIABCxAzILCAAQgAQQsQMQgwEyBAgAEEM6BwgjEOoCECc6BwguEOoCECc6EgguEMcBENEDEOoCELQCEEMYAToVCC4QxwEQ0QMQ1AIQ6gIQtAIQQxgBOgwIABDqAhC0AhBDGAE6CgguEMcBENEDEEM6EwguELEDEIMBEMcBENEDENQCEEM6CggAELEDEIMBEEM6CAgAEIAEELEDOhQILhCDARDHARDUAhCxAxDRAxCABDoFCAAQgARKBAhBGABKBAhGGAFQsCRY_9sBYPTfAWgEcAF4AIABjAGIAZYEkgEDMC40mAEAoAEBsAEUwAEB2gEGCAEQARgB&sclient=gws-wiz-serp"><b>TCS</b></a>er.</em></p></td>
-    </tr>
-  </table>
-  <p>I am a professor at Cornell University. My research focuses on algorithms and networks, the roles they play in large-scale social and information systems, and their broader societal implications. My work has been supported by an NSF Career Award, an ONR Young Investigator Award, a MacArthur Foundation Fellowship, a Packard Foundation Fellowship, a Simons Investigator Award, a Sloan Foundation Fellowship, a Vannevar Bush Faculty Fellowship, and grants from Facebook, Google, Yahoo, the MacArthur Foundation, the ARO, and the NSF. I am a member of the National Academy of Sciences, the National Academy of Engineering, and the American Academy of Arts and Sciences.</p>
-  <hr size="3" noshade>
-  <h2><a href="C:\Users\91778\Dropbox\My PC (LAPTOP-TD0G4TPP)\Desktop\html.txt">Education</a></h2>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </tfoot>
-    <tr>
-      <td>2010-2013</td>
-      <td>school</td>
-    </tr>
-    <td>2013</td>
-    <td>10th class</td>
-  </table>
-  <br>
-  <table border="5">
-    <colgroup span="4"></colgroup>
-    <tr>
-      <th>Countries</th>
-      <th>Capitals</th>
-      <th>Population</th>
-      <th>Language</th>
-    </tr>
-    <tr>
-      <td>USA</td>
-      <td>Washington, D.C.</td>
-      <td>309 million</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>Sweden</td>
-      <td>Stockholm</td>
-      <td>9 million</td>
-      <td>Swedish</td>
-    </tr>
-  </table><br><hr size="2" noshade>
-  <h3>Skills</h3>
-  <table>
-    <tr>
-      <td>
-       <table cellspaceing="50">
-          <thead>
-            <th>Skills</th>
-            <th>Rating</th>
-          </thead>
-          <tr>
-            <td>Web Development</td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>Java</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>SQL</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>    
-          <tr>
-            <td>PL SQL</td>
-            <td>⭐⭐</td>
-          </tr>
-          <tr>
-            <td>UNIX</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>CAD</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+
+  <section id="title">
+   <div class="container-fluid">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <a class="navbar-brand" href="">tinDog</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+             <a class="nav-link" href="#footer">Contact</a> 
+          </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#cta">Download</a> 
+          </li> 
+          <li class="nav-item">
+             <a class="nav-link" href="#pricing">Pricing</a> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a> 
+         </li>
+      </ul>
+      </div>
+  </nav>
+
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Meet new and interesting dogs nearby.</h1>
+        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+      </div>
+      <div class="col-lg-6">
+        <img  class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+      </div>
+    </div>
+   </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+   <div class="row">
+    <div class="feature-box col-lg-4">
+      <i class="icon fa-sharp fa-solid fa-circle-check fa-3x"></i>
+      <h3>Easy to use.</h3>
+      <p>So easy to use, even your dog could do it.</p>
+     </div>
+     <div class="feature-box  col-lg-4">
+      <i class="icon fa-solid fa-bullseye fa-3x"></i>
+      <h3>Elite Clientele</h3>
+      <p>We have all the dogs, the greatest dogs.</p>
+     </div>
+     <div class="feature-box  col-lg-4">
+      <i class="icon fa-solid fa-heart fa-3x"></i>
+      <h3>Guaranteed to work.</h3>
+      <p>Find the love of your dog's life or your money back.</p>
+     </div>  
+   </div>
+   
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-ride="false" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">    
+    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img  class="testimonials-img" src="images/dog-img.jpg" alt="dog-profile">
+    <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonials-img" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+      
+        </div>
+      </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+           <p>5 Matches Per Day</p>
+           <p>10 Messages Per Day</p>
+           <p>Unlimited App Usage</p>
+           <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+    </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark"  type="button">Sign Up</button>
+          </div>
+        </div>  
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark"  type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="ctatext">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="btn btn-lgn btn-dark download-button" type="button"><i class="fa-brands fa-apple"></i>  Download</button>
+    <button class="btn btn-lgn btn-outline-light download-button" type="button"><i class="fa-brands fa-google-play"></i>  Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-icon fa-brands fa-facebook"></i>
+    <i class="social-icon fa-brands fa-twitter"></i>
+    <i class="social-icon fa-brands fa-snapchat"></i>
+    <i class="social-icon fa-brands fa-instagram"></i>
+    <p>© Copyright TinDog</p>
+
+  </footer>
+
+
 </body>
+
 </html>
